@@ -1,0 +1,10 @@
+.search-form {
+  border-radius: 11px;
+  font-size: 20px;
+  padding: 0 10px;
+  text-align: center;
+}
+.button {
+  background-color: red;
+  color: antiquewhite;
+}
