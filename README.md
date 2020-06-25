@@ -2,6 +2,8 @@
 
 This is a React web application that allows users to search for images based on a query relating to space.
 
+Below , you'll find a screenshot of the app rendering both in desktop and mobile.
+
 ![Screenshot](image.png)
 
 ### Techonologies
