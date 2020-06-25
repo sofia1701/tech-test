@@ -2,7 +2,7 @@
 
 This is a React web application that allows users to search for images based on a query relating to space.
 
-![Screenshot](screenshot1.png) ![Screenshot](screenshot2.png)
+![Screenshot](image.png)
 
 ### Techonologies
 
@@ -10,12 +10,12 @@ React
 
 ### Testing
 
-React Testing Library
+React Testing Library<br />
 Jest
 
 ### Packages
 
-Axios
+Axios<br />
 PropTypes
 
 ### In the project directory, you can run:
