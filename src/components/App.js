@@ -5,7 +5,7 @@ import SearchResults from "./SearchResults";
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
-
+  
   return (
     <div className="App">
       <img
@@ -14,10 +14,10 @@ function App() {
         alt="Nasa logo"
       />
       <SearchForm setSearchResults={setSearchResults} />
+    
       {searchResults && searchResults.length > 0 && (
         <SearchResults results={searchResults} />
       )}
-      
     </div>
   );
 }

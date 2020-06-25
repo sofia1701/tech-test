@@ -13,7 +13,7 @@ const SearchResults = ({ results }) => {
 };
 
 SearchResults.propTypes = {
-  results: PropTypes.array
+  results: PropTypes.array,
 };
 
 export default SearchResults;

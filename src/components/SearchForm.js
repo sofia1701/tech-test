@@ -5,15 +5,22 @@ import PropTypes from "prop-types";
 
 const SearchForm = ({ setSearchResults }) => {
   const [value, setValue] = useState("");
+  const [load, setLoad] = useState(false);
 
   const handleChange = (event) => {
     setValue(event.target.value);
   };
 
   const handleSubmit = async (event) => {
+    setLoad(true);
     event.preventDefault();
     setSearchResults(await getImages(value));
+    setLoad(false);
   };
+
+  if (load) {
+    return <div className="loading">Searching for images...</div>;
+  }
 
   return (
     <div>
@@ -35,7 +42,7 @@ const SearchForm = ({ setSearchResults }) => {
 };
 
 SearchForm.propTypes = {
-  setSearchResults: PropTypes.func
+  setSearchResults: PropTypes.func,
 };
 
 export default SearchForm;
