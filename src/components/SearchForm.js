@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../styles/SearchForm.css";
 import getImages from "../requests/getImages";
+import PropTypes from "prop-types";
 
-const SearchForm = ({setSearchResults}) => {
+const SearchForm = ({ setSearchResults }) => {
   const [value, setValue] = useState("");
 
   const handleChange = (event) => {
@@ -31,6 +32,10 @@ const SearchForm = ({setSearchResults}) => {
       </form>
     </div>
   );
+};
+
+SearchForm.propTypes = {
+  setSearchResults: PropTypes.func
 };
 
 export default SearchForm;

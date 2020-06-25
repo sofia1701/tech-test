@@ -2,8 +2,13 @@
 
 exports[`SearchResults renders correctly 1`] = `
 <DocumentFragment>
-  <p>
-    No results
-  </p>
+  <div
+    class="search-results"
+  >
+    <img
+      alt="img"
+      src="[object Object]"
+    />
+  </div>
 </DocumentFragment>
 `;
